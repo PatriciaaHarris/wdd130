@@ -32,3 +32,22 @@ footer{
     border-top: 1px solid #000;
     text-align: center;
 }
+
+nav {
+    background-color: hsl(208, 57%, 45%);
+    padding: 1rem;
+    text-align: center;
+
+}
+nav a {
+    color: #f5ecec;
+    margin:  0;
+
+}
+
+h1 {
+    color: hsl(208, 57%, 45%);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+
+}
