@@ -18,6 +18,15 @@
 header{
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1rem;
+    
+}
+header img {
+    max-height: 80px;
+    margin-left: 70px;
 }
 
 body {
@@ -36,6 +45,27 @@ h1, h2{
 nav, p, section, article{
     margin: 16px;
     padding: 8px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+    margin-bottom: -30px;
+}
+nav a :hover, nav a:focus{
+    background-color: antiquewhite;
+    color: black;
+}
+
+nav a{
+    transition: background-color 0.3s ease,color 0.3s ease;
+    color: var(--accent1-color);
+    font-weight: bold;
+    padding: 5px 20px;
+    border: 2px solid var(--accent1-color);
+    border-radius: 0;
 }
 
 .socialmedia a {
@@ -49,6 +79,7 @@ nav, p, section, article{
     display: block;
     width: 100%;
     height: auto;
+
 }
 h1{
     position: absolute;
@@ -63,9 +94,79 @@ h1{
 .hero article img{
     float: right;
     width: 125px;
+
+
 }
 
 article{
     position: absolute;
     top: 20%;
+    box-shadow: 0 2px 8px;
+    border: 2px solid var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.7);
+    top:40%;
+}
+
+.History{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+
+.History img {
+    max-width: 200px;
+    height:auto ;
+}
+
+.History p {
+    flex: 1;
+    min-width: 200px;
+}
+h2 {
+    text-align: center;
+    border-bottom: 5rem;
+}
+.Adventure-Gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: baseline;
+
+    margin: 1rem;
+}
+.Adventure-Gallery img{
+    max-width: 135px;
+    height: auto;
+    border-radius: 8px;
+
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+footer p {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 30px;
+    
+    
+
+}
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    
+
+}
+.socialmedia a, .socialmedia a img{
+    border: none;
 }
