@@ -133,16 +133,23 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: baseline;
-
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     margin: 1rem;
 }
 .Adventure-Gallery img{
-    max-width: 135px;
-    height: auto;
+    max-width: 130px;
+    height: 100px;
     border-radius: 8px;
+    
 
 }
+.Adventure-Gallery figcaption {
+    font-size: 0.85rem;
+    color: var(--accent1-color);
+    margin-top: 0,5rem;
+}    
 footer {
     display: flex;
     justify-content: space-between;
