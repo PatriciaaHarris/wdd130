@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Rafting Patagónico</title>    
+    <meta name="description" content="Get in touch with Rafting Patagónico. Send us a message, see our location, or contact our staff.">
+    <meta name="author" content="Patricia Harris">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        /* Contact Page Specific Styles */
+        .contact-info {
+            background-color: var(--accent2-color);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        .contact-info h2 {
+            text-align: center;
+            font-family: var(--heading-font);
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .contact-info p {
+            margin: 8px 0;
+            color: var(--primary-color);
+        }
+        .map-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .map-container iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .employees {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .employee {
+            text-align: center;
+        }
+        .employee img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .employee p {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        /* Form Contact Section */
+        .contact-section {
+            background-color: var(--accent2-color);
+            padding: 30px 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            text-align: left;
+        }
+        .contact-section h2 {
+            text-align: center;
+            font-family: var(--heading-font);
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact-form label {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-family: var(--body-font);
+            font-size: 14px;
+        }
+        .contact-form button {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 12px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: var(--primary-color);
+            color: var(--accent2-color);
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="Rafting Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+```
+<main>
+    <!-- Contact info -->
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> Región de los Lagos, Chile</p>
+        <p><strong>Phone:</strong> +56 9 1234 5678</p>
+        <p><strong>Email:</strong> info@raftingpatagonico.com</p>
+    </section>
+
+    <!-- Map -->
+    <section class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.123456!2d-72.123456!3d-50.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x123456789abcdef!2sRafting%20Patag%C3%B3nico!5e0!3m2!1sen!2scl!4v1234567890" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Employees -->
+    <section class="employees">
+        <div class="employee">
+            <img src="images/trabajador1.jpeg" alt="Guide Anna">
+            <p>Anna - Head Guide</p>
+        </div>
+        <div class="employee">
+            <img src="images/trabjador2.jpeg" alt="Guide Berta">
+            <p>Berta - Safety Officer</p>
+        </div>
+        <div class="employee">
+            <img src="images/trabajador3.jpg" alt="Guide José">
+            <p>José - Trip Coordinator</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section">
+        <h2>Send Us a Message</h2>
+        <form class="contact-form" action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+            <label>Purpose of Message</label>
+            <div class="radio-group">
+                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+            </div>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-box">
+        <span>© 2025 ✨ Rafting Patagónico ✨ Patricia Harris ✨</span>
+        <a href="https://www.whatsapp.com/?lang=es">
+            <img src="images/whatsapp.png" alt="whatsapp logo">
+        </a>
+        <a href="https://www.facebook.com/login.php">
+            <img src="images/facebook.png" alt="facebook logo">
+        </a>
+        <a href="https://www.instagram.com">
+            <img src="images/instagram.png" alt="instagram logo">
+        </a>
+    </div>
+</footer>
+
+
+</body>
+</html>
