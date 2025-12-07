@@ -1,65 +1,100 @@
-<!--14 nov 2025-->
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> WDD 130 | Patricia Harris </title>
-    <meta name="description"
-        content="Personal webpage of Patricia Harris for WDD 130. Learn about me and my journey into web development.">
+    <title>Home | Rafting Patagónico</title>
+    <meta name="description" content="Welcome to Rafting Patagónico! Explore thrilling rafting adventures in Patagonia, learn about our guides, and join our community.">
     <meta name="author" content="Patricia Harris">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family==Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
+    <link rel="stylesheet" href="wwr/styles/rafting.css">
 </head>
-
 <body>
-    <header>
+
+<header>
+    <div class="container">
+        <img src="wwr/images/logo.png" alt="Rafting Logo">
         <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
-            <a href="https://www.linkedin.com/in/patricia-harrisc/"> Profile</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
-    </header>
-    <main>
+    </div>
+</header>
 
-        <h1>Patricia Harris / WDD 130 </h1>
-        <img src="images/profile.png" alt="Partrait of Patricia Harris walking" width="600">
+<main>
 
-        <p>"Hello, my name is Patricia. I have six siblings and I am from northern Chile. I enjoy mango, learning new
-            things, and
-            exploring the world of web development. In my free time, I like to read, listen to music, and spend time
-            with my
-            family.
-            I am excited to improve my skills and create fun projects. This course is the first step in my journey to
-            becoming a
-            better web developer."</p>
-        <ul class="box indent">
-            <li><a ref="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/concepcion-chile/2018/800x500/03-Concepcion-Chile-Temple-2114384.jpg"
-                    target="_blank">Chile Concepción Temple</a></li>
-            <li><a href="https://churchofjesuschrist.org/imgs/e02ad85a9f8a3c4fc4192a1d5a7969a2e3cbfcc7/full/640%2C/0/default"
-                    target="_blank">Chile Antofagasta Temple</a></li>
-            <li><a href="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/santiago-chile/800x500/santiago-chile-temple-autumn-1165479-wallpaper.jpg"
-                    target="_blank">Chile Santiago Temple</a></li>
-        </ul>
+```
+<!-- Hero Section -->
+<section class="hero">
+    <img src="wwr/images/background.jpg" alt="Rafting Adventure">
+    <h1>Experience the Thrill of Patagonia's Rivers!</h1>
+    <article class="hero-text">
+        <p>Join our guided rafting trips and discover breathtaking landscapes while enjoying a safe and exciting adventure. Perfect for all skill levels!</p>
+    </article>
+</section>
 
-    </main>
-    <aside class="box">
-        <h2>Chile</h2>
-        <img src="images/sopaipillas.png" alt="Traditional Chilean food called Sopaipillas with Pebre" width="600">
-        <p>Chile is a long and narrow country located in the southern part of South America. It stretches between the
-            Andes Mountains and the Pacific Ocean, giving it a wide variety of landscapes from the Atacama Desert (the
-            driest in the world) in the north to the glaciers and fjords of Patagonia in the south.</p>
+<!-- Newsletter Signup -->
+<section class="highlight" style="margin-top: 30px;">
+    <h2>Stay Updated!</h2>
+    <form class="contact-form" action="#" method="post" style="max-width: 400px; margin: 0 auto;">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
 
-    </aside>
-    <footer>
-        <p> © 2025 😁 Patricia Harris 😁 Iquique , Chile</p>
-    </footer>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+<!-- Call to Action to Trips -->
+<section class="highlight" style="margin-top: 40px;">
+    <h2>Ready for an Adventure?</h2>
+    <p>Check out our exciting rafting trips and start planning your journey today!</p>
+    <a href="trips.html" style="font-weight: bold; font-size: 18px; color: #703f26;">➡ Explore Trips</a>
+</section>
+
+<!-- Grid Section About Offerings -->
+<section class="highlight-title" style="margin-top: 40px;">Why Choose Rafting Patagónico?</section>
+<section class="highlight-images" style="margin: 30px auto; width: 90%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+    <article style="background-color: #e9e3b4; padding: 20px; border-radius: 10px;">
+        <img src="wwr/images/level3.jpg" alt="Beautiful Rivers" style="width: 100%; border-radius: 10px;">
+        <h3 style="color: #703f26; margin-top: 10px;">Breathtaking Rivers</h3>
+        <p>Explore crystal-clear rivers surrounded by Patagonia’s stunning landscapes.</p>
+    </article>
+    <article style="background-color: #e9e3b4; padding: 20px; border-radius: 10px;">
+        <img src="wwr/images/history.jpg" alt="Expert Guides" style="width: 100%; border-radius: 10px;">
+        <h3 style="color: #703f26; margin-top: 10px;">Expert Guides</h3>
+        <p>Our experienced guides ensure a safe and unforgettable rafting experience.</p>
+    </article>
+    <article style="background-color: #e9e3b4; padding: 20px; border-radius: 10px;">
+        <img src="wwr/images/patagonia4.jpg" alt="Fun for Everyone" style="width: 100%; border-radius: 10px;">
+        <h3 style="color: #703f26; margin-top: 10px;">Fun for Everyone</h3>
+        <p>Whether you are a beginner or a pro, our trips are suitable for all skill levels.</p>
+    </article>
+</section>
+
+
+</main>
+
+<footer>
+    <div class="footer-box">
+        <span>© 2025 ✨ Rafting Patagónico ✨ Patricia Harris ✨</span>
+        <a href="https://www.whatsapp.com/?lang=es">
+            <img src="wwr/images/whatsapp.png" alt="whatsapp logo">
+        </a>
+        <a href="https://www.facebook.com/login.php">
+            <img src="wwr/images/facebook.png" alt="facebook logo">
+        </a>
+        <a href="https://www.instagram.com">
+            <img src="wwr/images/instagram.png" alt="instagram logo">
+        </a>
+    </div>
+</footer>
 
 </body>
-
 </html>
