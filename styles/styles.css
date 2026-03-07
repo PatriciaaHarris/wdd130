@@ -1,0 +1,27 @@
+nav {
+    /*parte de arriba (home, website,etc*/
+    background-color: bisque;
+    padding: 10px;
+}
+
+nav a {
+    color: brown;
+    display: block;
+    padding: 20px;
+}
+
+h1 {
+    color: beige;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border: 1px sandybrown;
+    padding: 2px;
+    box-shadow: 0 0 30px burlywood;
+}
+
+p {
+    padding: 10px;
+}
