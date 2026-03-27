@@ -20,6 +20,7 @@ button {
 
 section {
     background-color: var(--accent1-color);
+    color: #fff;
 }
 
 body {
@@ -46,6 +47,10 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+section h2 {
+    color: #fff;
 }
 
 .socialmedia a {
