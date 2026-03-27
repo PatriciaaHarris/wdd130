@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #e57c3a;
+    --primary-color: #963900;
     --secondary-color: #EDD75A;
     --accent1-color: #413726;
     --accent2-color: #0f7d7e;
@@ -14,8 +14,12 @@
 
 }
 
+button {
+    background-color: var(--accent2-color);
+}
+
 section {
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
 }
 
 body {
