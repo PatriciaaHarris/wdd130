@@ -1,3 +1,11 @@
+:root {
+    --heading-background-color: #f06;
+    --heading-text-color: #333;
+    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -10,16 +18,13 @@ h1 {
     padding-bottom: 0;
 }
 
-
-
 p {
     margin: 0;
 }
 
 code {
-    color: darkgreen;
-    font-weight: 700;
-    font-size: 1.4rem;
+    color: var(--heading-background-color) font-weight: 700;
+
 }
 
 /* Class examples - can be reused */
@@ -28,7 +33,8 @@ code {
     margin: 20px 0;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 10px;
-    background-color: #ddd; /* this is shorthand for #dddddd */
+    background-color: var(--heading-text-color);
+    /* this is shorthand for #dddddd */
 }
 
 .highlight {
@@ -55,4 +61,3 @@ code {
     border-radius: 20px;
     padding: 20px
 }
-
