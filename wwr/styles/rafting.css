@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #FFAD08;
+    --primary-color: #e57c3a;
     --secondary-color: #EDD75A;
     --accent1-color: #413726;
     --accent2-color: #0f7d7e;
@@ -12,6 +12,10 @@
     padding: 0;
     box-sizing: border-box;
 
+}
+
+section {
+    background-color: var(--secondary-color);
 }
 
 body {
@@ -46,6 +50,7 @@ article {
 
 .hero {
     position: relative;
+    background-color: var(--secondary-color);
 }
 
 .hero img {
