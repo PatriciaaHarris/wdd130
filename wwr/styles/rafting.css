@@ -3,8 +3,7 @@
     --secondary-color: #EDD75A;
     --accent1-color: #413726;
     --accent2-color: #0f7d7e;
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+    --white-color: #ffffff;
 }
 
 * {
@@ -38,8 +37,8 @@ header nav {
     /*Los enlances de navegaciones*/
     display: flex;
     padding: 20px 100px;
-    background-color: #EDD75A;
     font-size: small;
+    background-color: var(--secondary-color);
     gap: 1px;
     /* espacio entre enlaces */
     justify-content: flex-end;
@@ -114,9 +113,7 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
-    color: white;
-    background-color: rgba(65, 55, 38, 0.7);
-
+    color: var(--white-color)
 }
 
 .hero article {
