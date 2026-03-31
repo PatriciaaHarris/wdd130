@@ -19,7 +19,7 @@ button {
 
 section {
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--white-color);
 }
 
 body {
@@ -89,7 +89,7 @@ article {
 }
 
 section h2 {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .socialmedia a {
@@ -132,6 +132,11 @@ h1 {
     /* límite para que no sea gigante */
 }
 
+.hero h1 {
+    color: var(--white-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
 .hero article img {
     float: right;
     width: 125px;
@@ -146,7 +151,7 @@ h1 {
     align-items: center;
 
     background-color: var(--accent1-color);
-    color: white;
+    color: var(--white-color);
     padding: 10px;
     margin: 10px 1px 10px 1px;
 }
@@ -209,6 +214,6 @@ footer {
     /* separa texto e iconos */
     align-items: center;
     /*  los pone en la misma línea */
-    background-color: #EDD75A;
+    background-color: var(--secondary-color);
     padding: 1px 40px 1px 40px;
 }
