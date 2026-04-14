@@ -1,9 +1,11 @@
 :root {
     --primary-color: #963900;
-    --secondary-color: #EDD75A;
-    --accent1-color: #413726;
+    --secondary-color: rgba(237, 215, 90, 0.7);
+    --accent1-color: rgba(65, 55, 38, 0.9);
     --accent2-color: #0f7d7e;
     --white-color: #ffffff;
+    --heading-font: Arial, sans-serif;
+    --body-font: Verdana, sans-serif;
 }
 
 * {
@@ -68,10 +70,8 @@ header img {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
-    justify-content: center;
-
 }
 
 h1,
@@ -108,7 +108,6 @@ section h2 {
 }
 
 h1 {
-    position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
@@ -133,10 +132,11 @@ h1 {
 }
 
 .hero h1 {
-    color: var(--white-color);
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 16px;
+    position: absolute;
+    top: 20px;
+    width: 100%;
     text-align: center;
+    color: white;
 }
 
 .hero article img {
@@ -269,4 +269,91 @@ button:hover {
 
 .opa article p {
     margin: 1px 0;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.cta {
+    text-align: center;
+}
+
+button {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+.vamos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.pay {
+    flex-direction: column;
+    text-align: center;
+}
+
+.mimo {
+    text-align: center;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+section a {
+    background-color: #ffffff;
+    color: #413726;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    text-align: center;
+}
+
+section.cta2 {
+    background-color: #ffffff;
+    color: #413726;
+    text-align: center;
+}
+
+.cta2 h2 {
+    color: #413726;
 }
