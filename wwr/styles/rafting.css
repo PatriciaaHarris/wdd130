@@ -286,6 +286,12 @@ button:hover {
 
 .cta {
     text-align: center;
+    background-color: #ffffff;
+    color: #413726;
+}
+
+.cta h1 {
+    color: #413726;
 }
 
 button {
@@ -305,6 +311,8 @@ button:hover {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     text-align: center;
+    color: #413726;
+    background-color: #ffffff;
 }
 
 .pay {
@@ -356,4 +364,9 @@ section.cta2 {
 
 .cta2 h2 {
     color: #413726;
+}
+
+.cta p {
+    background-color: #413726;
+    color: #ffffff;
 }
